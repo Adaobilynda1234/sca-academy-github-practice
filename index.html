@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CampusHub Task Board</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="container">
+    <section class="card">
+      <h1>Welcom to CampusHub</h1>
+      <p class="subtitle">A small task board for classroom GitHub practice.</p>
+
+      <form id="task-form" class="task-form">
+        <label for="task-input">New task</label>
+        <div class="row">
+          <input id="task-input" type="text" placeholder="Enter a task" />
+          <button id="submit-btn" type="submit">Add task</button>
+        </div>
+        <small id="helper-text">Tip: Keep task names short and clear.</small>
+      </form>
+
+      <div class="filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="open">Open</button>
+        <button class="filter-btn" data-filter="completed">Completed</button>
+      </div>
+
+      <ul id="task-list" class="task-list" aria-live="polite"></ul>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
