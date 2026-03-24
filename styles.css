@@ -113,6 +113,24 @@ button {
   background: #dc2626;
 }
 
+/* Footer Styles */
+.site-footer {
+  text-align: center;
+  margin-top: 40px;
+  padding: 16px;
+  color: #6b7280;
+  font-size: 0.875rem;
+}
+
+.site-footer a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.site-footer a:hover {
+  text-decoration: underline;
+}
+
 @media (max-width: 520px) {
   .row {
     flex-direction: column;
